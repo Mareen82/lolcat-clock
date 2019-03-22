@@ -84,18 +84,18 @@ var partyEvent = function() {
         time = partyTime;
         partyTimeButton.innerText = "Party Over";
         partyTimeButton.style.background = "rgb(10, 141, 171)";
-	   image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
+	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
         messageText = "Party time!!";
     } else {
         isPartyTime = false;
         time = new Date().getHours();
         partyTimeButton.innerText = "Party Time!";
         partyTimeButton.style.background = "rgb(34, 34, 34)";
-	   image = "https://img2.thejournal.ie/inline/1015093/original/?width=455&version=1015093";
+	image = "https://img2.thejournal.ie/inline/1015093/original/?width=455&version=1015093";
     }
 };
+
 partyTimeButton.addEventListener("click", partyEvent);
-partyTimeButton.addEventListener("click", timeEvent);
 
 //Wake Up Selector
 var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
@@ -115,3 +115,5 @@ var napEvent = function() {
     napTime = napTimeSelector.value;
 };
 napTimeSelector.addEventListener('change', napEvent);
+
+partyTimeButton.addEventListener("click", timeEvent);
