@@ -41,9 +41,6 @@ blockquote {
   color: #fff;
 }
 
-blockquote:before { content: '"'; }
-blockquote:after { content: '"'; }
-
 #lolcat {
   margin: 0 auto;
   -webkit-border-radius: 100px;
