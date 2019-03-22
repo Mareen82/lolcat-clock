@@ -95,7 +95,7 @@ var partyEvent = function() {
     }
 };
 partyTimeButton.addEventListener("click", partyEvent);
-partyTimeButton.addEventlistener("click", timeEvent);
+partyTimeButton.addEventListener("click", timeEvent);
 
 //Wake Up Selector
 var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
